@@ -1,0 +1,18 @@
+{
+  "connect.wallet.to.chat": "Connect Wallet to Chat",
+  "home": "Home",
+  "about": "About",
+  "ask.now": "You can ask Vitalik anything now!",
+  "ask.anything": "Ask anything",
+  "share": "Share",
+  "details": "Details",
+  "about.description": "based on Pando Botastic API, developed by Pando Proto.",
+  "please.input": "Please input",
+  "chat.and.share": "Please chat then you can share",
+  "share.as.pic": "Share as picture",
+  "save": "Save",
+  "disconnect": "Disconnect",
+  "examples": "🐱 TRY EXAMPLES: ",
+  "clear": "🆕 chat",
+  "new.conversation.success": "Create new conversation successfully"
+}

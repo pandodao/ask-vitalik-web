@@ -1,0 +1,18 @@
+{
+  "connect.wallet.to.chat": "连接钱包开始聊天",
+  "home": "首页",
+  "about": "关于",
+  "ask.now": "我是 V 神，可以问我任何问题！",
+  "ask.anything": "问点什么",
+  "share": "分享",
+  "details": "我的",
+  "about.description": "基于 Pando Botastic API， 由 Pando Proto 开发。",
+  "please.input": "请先输入",
+  "chat.and.share": "请开始聊天",
+  "share.as.pic": "分享聊天",
+  "save": "保存",
+  "disconnect": "断开连接",
+  "examples": "🐱 示例：",
+  "clear": "新会话",
+  "new.conversation.success": "成功创建新会话"
+}
