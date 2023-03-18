@@ -14,5 +14,6 @@
   "disconnect": "断开连接",
   "examples": "🐱 示例：",
   "clear": "新会话",
-  "new.conversation.success": "成功创建新会话"
+  "new.conversation.success": "成功创建新会话",
+  "long.press": "长按图片保存"
 }

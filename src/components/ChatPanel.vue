@@ -245,7 +245,7 @@ onMounted(async () => {
 }
 
 .chat-box-mobile {
-  height: 50vh;
+  height: calc(100vh - 320px);
 }
 
 .send-icon {

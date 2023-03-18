@@ -1,5 +1,5 @@
 <template>
-  <FModal v-model="exampleModal" :title="$t('examples')" width="540" ref="modal">
+  <FModal v-model="exampleModal" :title="$t('examples')" width="540">
     <template #activator="{ props }">
       <FButton
         variant="tonal"
@@ -46,7 +46,6 @@ const emits = defineEmits({
 
 const exampleModal = ref(false)
 const iconIdx = ref(NaN)
-const modal = ref()
 
 const list = [
   'How do you think of DAO?',
@@ -64,6 +63,7 @@ const list = [
 const handleClick = async (val: string) => {
   emits('update', val)
   exampleModal.value = false
+  iconIdx.value = NaN
 }
 </script>
 

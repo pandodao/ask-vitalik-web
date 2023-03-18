@@ -14,5 +14,6 @@
   "disconnect": "Disconnect",
   "examples": "🐱 TRY EXAMPLES: ",
   "clear": "🆕 chat",
-  "new.conversation.success": "Create new conversation successfully"
+  "new.conversation.success": "Create new conversation successfully",
+  "long.press": "Long press the image to save"
 }
