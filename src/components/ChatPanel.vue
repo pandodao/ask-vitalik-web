@@ -185,7 +185,7 @@ const handlePost = async (val?: string) => {
     return
   }
 
-  if (!input.value && !val) {
+  if (!input.value && typeof val !== 'string') {
     toast.error({ message: t('please.input') })
     return
   }
@@ -194,9 +194,21 @@ const handlePost = async (val?: string) => {
 
   try {
     if (typeof val === 'string') {
-      await postNewMessage(val)
+      try {
+        await postNewMessage(val)
+      } catch (error: any) {
+        if (error.code === 404) {
+          await genConversation(userIdentity.value)
+        }
+      }
     } else {
-      await postNewMessage(input.value)
+      try {
+        await postNewMessage(input.value)
+      } catch (error: any) {
+        if (error.code === 404) {
+          await genConversation(userIdentity.value)
+        }
+      }
     }
   } catch (error) {
     console.log('post err', error)
