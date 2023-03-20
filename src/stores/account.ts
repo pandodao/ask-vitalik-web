@@ -25,7 +25,7 @@ export const useAccountStore = defineStore(
 
     async function genConversation(id: string) {
       const resp = await createConversation({
-        bot_id: 1,
+        bot_id: Number(import.meta.env.VITE_BOT_ID),
         user_identity: id,
         lang: 'en'
       })

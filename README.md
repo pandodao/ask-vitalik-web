@@ -6,7 +6,26 @@ Please refer to [data/README.md](data/README.md) for details.
 
 ## Run the program
 
-@TODO
+### 1. Create .env file
+
+First, you need to apply an app & bot at [Pando Developers' Console](https://developers.pando.im/console/botastic/) of botastic, then fill in your application information:
+
+```
+VITE_APP_ID='<your app id>'
+VITE_SECRET='<your app secret>'
+VITE_BOT_ID='<your bot id>''
+VITE_BOT_API_BASE='https://botastic-api.pando.im/api'
+VITE_MIXIN_API_BASE='https://mixin-api.zeromesh.net' // optional, required when login with mixin messenger
+```
+
+### 2. Develop
+
+```
+yarn // install dependencies
+yarn dev // start develop
+```
+
+**Remark:** This project use [@foxone/uikit](https://github.com/fox-one/uikit-next) as UI library, and [@foxone/mixin-passport](https://www.npmjs.com/package/@foxone/mixin-passport) to login with wallets.
 
 ## Limitations
 

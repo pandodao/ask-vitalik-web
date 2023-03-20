@@ -154,7 +154,6 @@ const loopReadConversation = () => {
 }
 
 const getCurrentConversation = async () => {
-  console.log('conv id', conversationId.value)
   try {
     const resp = await readConversation(conversationId.value)
     history.value = resp.history
@@ -233,7 +232,6 @@ const getQuery = () => {
 
 onMounted(async () => {
   if (userIdentity.value && !conversationId.value) {
-    console.log('gen conv...')
     await genConversation(userIdentity.value)
   }
 
