@@ -22,7 +22,6 @@ export const http = new Http(
   {
     headers: {
       'X-BOTASTIC-APPID': import.meta.env.VITE_APP_ID,
-      'X-BOTASTIC-SECRET': import.meta.env.VITE_SECRET
     },
     baseURL: import.meta.env.VITE_BOT_API_BASE
   },

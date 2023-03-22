@@ -12,8 +12,7 @@ First, you need to apply an app & bot at [Pando Developers' Console](https://dev
 
 ```
 VITE_APP_ID='<your app id>'
-VITE_SECRET='<your app secret>'
-VITE_BOT_ID='<your bot id>''
+VITE_BOT_ID='<your bot id>'
 VITE_BOT_API_BASE='https://botastic-api.pando.im/api'
 VITE_MIXIN_API_BASE='https://mixin-api.zeromesh.net' // optional, required when login with mixin messenger
 ```

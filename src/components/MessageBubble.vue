@@ -1,7 +1,7 @@
 <template>
   <div class="msg-bubble">
     <VSpacer v-if="right" class="spacer" />
-    <span :class="['text', { 'text-right': right, 'text-error': error }]">
+    <span :class="['text', { 'text-right': right, 'text-error': error, 'text-empty': empty }]">
       {{ parseMsg(msg) }}
       <a v-if="respRef" href="">{{ respRef }}</a>
     </span>
@@ -25,9 +25,13 @@ defineProps({
 })
 
 const respRef = ref(null)
+const empty = ref(false)
 
 const parseMsg = (val?: string) => {
-  if (!val) return
+  if (!val) {
+    empty.value = true
+    return
+  }
 
   // const splitArr = val.split('[{')
   // const mainStr = splitArr.slice(0, -1)[0]
@@ -54,6 +58,7 @@ const parseMsg = (val?: string) => {
   // } else {
   //   return val
   // }
+  empty.value = false
   return val
 }
 </script>
@@ -69,8 +74,6 @@ const parseMsg = (val?: string) => {
 }
 
 .text {
-  min-width: 32px;
-  min-height: 32px;
   font-size: 14px;
   font-weight: 500;
   color: black;
@@ -80,6 +83,11 @@ const parseMsg = (val?: string) => {
   border-radius: 8px 8px 8px 0;
   text-align: left !important;
   word-break: break-all;
+}
+
+.text-empty {
+  min-width: 32px;
+  min-height: 32px;
 }
 
 .text a {
