@@ -33,31 +33,6 @@ const parseMsg = (val?: string) => {
     return
   }
 
-  // const splitArr = val.split('[{')
-  // const mainStr = splitArr.slice(0, -1)[0]
-  // console.log('... mainStr', mainStr)
-  // const lastStr = splitArr.slice(-1)[0]
-  // console.log('lastStr', lastStr)
-
-  // if (lastStr.slice(-2) === '}]') {
-  //   const concatStr = `[{${lastStr}`
-
-  //   let remark
-  //   try {
-  //     console.log('>> concatStr', concatStr)
-  //     const parsedJsonArr = JSON.parse(concatStr)
-  //     console.log('-- parsedJsonArr', parsedJsonArr)
-  //     remark = parsedJsonArr[0].prefix
-  //     console.log('-- remark', remark)
-  //     respRef.value = remark
-  //   } catch (error) {
-  //     console.log('parse err', error)
-  //   }
-
-  //   return mainStr
-  // } else {
-  //   return val
-  // }
   empty.value = false
   return val
 }
